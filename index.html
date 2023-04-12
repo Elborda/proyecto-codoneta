@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img
+            class="logo-img"
+            src="https://imgs.search.brave.com/6I4Td672F0MG7YcjzzwuXHzreRn-yOoRaGxgsJj_QaE/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9vcGVu/Y2xpcGFydC5vcmcv/aW1hZ2UvMjQwMHB4/L3N2Z190b19wbmcv/MjQxMzMwL1NvY2Nl/ci1Mb2dvLnBuZw"
+            alt="logoFutbol"
+          />
+        </div>
+        <div class="ul-container">
+          <ul>
+            <li>Home</li>
+            <li>Fechas</li>
+            <li>Jugadores</li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <section class="main-flex-container">
+          <div class="main-titles">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="h1-titles">
+              <h1>LOREM</h1>
+              <h1>IPSUM</h1>
+              <h1>DOLOR</h1>
+              <h1>SIT</h1>
+            </div>
+            <p class="season-p">SEASON 2022/23</p>
+          </div>
+          <div class="main-logo">
+            <img
+              src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/2023/03/slider.png"
+              alt="main-logo"
+            />
+          </div>
+        </section>
+      </main>
+      <!--MATCHES-->
+      <section class="partidos-section">
+        <div class="partidos-categorias">
+          <div class="categorias-container">
+            <h2>Partidos</h2>
+            <ul>
+              <li>Categoria 1</li>
+              <li>Categoria 2</li>
+              <li>Categoria 3</li>
+            </ul>
+          </div>
+          <button type="button">TODAS LAS FECHAS</button>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <div
+        id="wg-api-football-games"
+        data-host="v3.football.api-sports.io"
+        data-key="905e3043d6398961618327125035787e"
+        data-date=""
+        data-league=""
+        data-season=""
+        data-theme=""
+        data-refresh="15"
+        data-show-toolbar="true"
+        data-show-errors="false"
+        data-show-logos="true"
+        data-modal-game="true"
+        data-modal-standings="true"
+        data-modal-show-logos="true"
+      ></div>
+      <script
+        type="module"
+        src="https://widgets.api-sports.io/2.0.3/widgets.js"
+      ></script>
+    </header>
+    <script src="javascript.js"></script>
+  </body>
+</html>
