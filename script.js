@@ -1,7 +1,8 @@
+let clavePersonal = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 let requestOptions = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "9906e5236fe264788c3498ca8f514921",
+    "x-rapidapi-key": clavePersonal,
     "x-rapidapi-host": "v3.football.api-sports.io",
   },
   redirect: "follow",
