@@ -2,24 +2,26 @@ let clavePersonal = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 let requestOptions = {
   method: "GET",
   headers: {
-    "x-rapidapi-key":  clavePersonal,
+    "x-rapidapi-key": clavePersonal,
     "x-rapidapi-host": "v3.football.api-sports.io",
   },
   redirect: "follow",
 };
 
-const fixtures = document.getElementById('fixture');
-const ol = document.createElement('ol');
+const fixtures = document.getElementById("fixture");
+const ol = document.createElement("ol");
+
+ol.classList.add("ol-fixture");
 
 //fetch("https://v3.football.api-sports.io/fixtures?live=all", requestOptions)
-fetch('datos.json')
-    .then((res) => res.json())
-    .then((data) => {
-        let cantidadResponse = data.response.length;
-        console.log(data, cantidadResponse);
-        for(let i = 0; i < cantidadResponse; i++){ 
-            const li = document.createElement('li');
-            li.innerHTML = `<h3>
+fetch("datos.json")
+  .then((res) => res.json())
+  .then((data) => {
+    let cantidadResponse = data.response.length;
+    console.log(data, cantidadResponse);
+    for (let i = 0; i < cantidadResponse; i++) {
+      const li = document.createElement("li");
+      li.innerHTML = `<h3>
                 Liga: ${data.response[i].league.name}<br>
                 País: ${data.response[i].league.country}<br>
                 Estadio: ${data.response[i].fixture.venue.name}<br>
@@ -32,8 +34,8 @@ fetch('datos.json')
                 Fecha y Hora: ${data.response[i].fixture.date} 
                               ${data.response[i].fixture.timezone}<br>
                 </h3>`;
-            ol.appendChild(li);
-        }
-    })
+      ol.appendChild(li);
+    }
+  })
   .catch((error) => console.log("error", error));
 fixtures.appendChild(ol);

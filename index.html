@@ -11,10 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link 
-      rel="shortcut icon" 
+    <link
+      rel="shortcut icon"
       href="https://imgs.search.brave.com/6I4Td672F0MG7YcjzzwuXHzreRn-yOoRaGxgsJj_QaE/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9vcGVu/Y2xpcGFydC5vcmcv/aW1hZ2UvMjQwMHB4/L3N2Z190b19wbmcv/MjQxMzMwL1NvY2Nl/ci1Mb2dvLnBuZw"
-      type="image/x-icon">
+      type="image/x-icon"
+    />
     <title>Codoneta</title>
   </head>
   <body>
@@ -55,46 +56,119 @@
           </div>
         </section>
       </main>
-      <!--MATCHES-->
-      <section class="partidos-section">
-        <div class="partidos-categorias">
-          <div class="categorias-container">
-            <h2>Partidos</h2>
-            <ul>
-              <li>Categoria 1</li>
-              <li>Categoria 2</li>
-              <li>Categoria 3</li>
-            </ul>
-          </div>
-          <button type="button">TODAS LAS FECHAS</button>
+    </header>
+    <!--MATCHES-->
+    <section class="partidos-section">
+      <div class="partidos-categorias">
+        <div class="categorias-container">
+          <h2>Partidos</h2>
+          <ul>
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+          </ul>
         </div>
-        <div>
-          <div id="fixture"><h2>Fixture</h2></div>
-          <div></div>
-          <div></div>
+        <button type="button">TODAS LAS FECHAS</button>
+      </div>
+      <div>
+        <div id="fixture"><h2>Fixtures</h2></div>
+      </div>
+    </section>
+    <!--NEWS SECTION-->
+    <section class="news-section">
+      <div class="partidos-categorias news-categorias">
+        <div class="categorias-container news-container">
+          <h2>NEWS</h2>
+          <ul>
+            <li>Club</li>
+            <li>Video</li>
+            <li>Players</li>
+            <li>Transitions</li>
+          </ul>
+        </div>
+        <button type="button news-btn">VISIT BLOG</button>
+      </div>
+      <div class="news-flex-container">
+        <div class="news-img-stadium">
+          <img
+            src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/elementor/thumbs/blog-post-featured-q44jfadd62e1jgg4ewu2up3u01vyixowp9cj85b2cg.jpg"
+            alt="Estadio de futbol"
+          />
+        </div>
+        <div class="news-texts-container">
+          <p>
+            <span>NEWS</span>
+            March 13
+          </p>
+          <h3>
+            There are many talented players out there. However, I believe Jones
+            is the one!
+          </h3>
+        </div>
+      </div>
+      <section class="other-news">
+        <div class="other-items">
+          <div class="news-img-container">
+            <img
+              src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/elementor/thumbs/blog-03-q44j8f5sx8i6xixw839uarxtx8jnimwvx0icxl5mjc.jpg"
+              alt="Foto-futbol-1"
+            />
+          </div>
+          <div class="news-texts-container others">
+            <p>
+              <span>NEWS</span>
+              March 11
+            </p>
+            <h3>Derby: Winners vs United, Things to do at the stadium!</h3>
+          </div>
+        </div>
+        <div class="other-items">
+          <div class="news-img-container">
+            <img
+              src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/elementor/thumbs/blog-01-q44j8v525f42ewaoms6hz5wo0scw5hobn7lm3ahxlk.jpg"
+              alt="Foto-futbol-2"
+            />
+          </div>
+          <div class="news-texts-container others">
+            <p>
+              <span>NEWS</span>
+              November 26
+            </p>
+            <h3>The club expecting ‘tough’ challenge, says manager Rohan</h3>
+          </div>
+        </div>
+        <div class="other-items">
+          <div class="news-img-container">
+            <img
+              src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/elementor/thumbs/blog-04-q44j87n3ek7wcn8tg00tqtu565kpt2317zah3dgrx4.jpg"
+              alt="Foto-futbol-3"
+            />
+          </div>
+          <div class="news-texts-container others">
+            <p>
+              <span>NEWS</span>
+              October 30
+            </p>
+            <h3>Inside the Teams training camp in the Capital city</h3>
+          </div>
+        </div>
+        <div class="other-items">
+          <div class="news-img-container">
+            <img
+              src="https://power.themeton.com/vensica/wp-content/uploads/sites/12/elementor/thumbs/blog-02-q44j8moifwshiemz06iuuq1iobil87qqm1q8rsuh5k.jpg"
+              alt="Foto-futbol-4"
+            />
+          </div>
+          <div class="news-texts-container others">
+            <p>
+              <span>NEWS</span>
+              September 17
+            </p>
+            <h3>Three February league fixtures altered for matches</h3>
+          </div>
         </div>
       </section>
-      <div
-        id="wg-api-football-games"
-        data-host="v3.football.api-sports.io"
-        data-key="905e3043d6398961618327125035787e"
-        data-date=""
-        data-league=""
-        data-season=""
-        data-theme=""
-        data-refresh="15"
-        data-show-toolbar="true"
-        data-show-errors="false"
-        data-show-logos="true"
-        data-modal-game="true"
-        data-modal-standings="true"
-        data-modal-show-logos="true"
-      ></div>
-      <script
-        type="module"
-        src="https://widgets.api-sports.io/2.0.3/widgets.js"
-      ></script>
-    </header>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
